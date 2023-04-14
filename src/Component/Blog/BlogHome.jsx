@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 import './Style/HomeCard.css'
 
 const BlogHome = (props) => {
-  const { imgUrl, starring, Name, releaseDate, description, blog } = props;
+  console.log(props)
+  const { imgUrl, starring, Name, releaseDate, description, Id } = props;
   return (
     <>
     <NavLink  state={{
@@ -12,8 +13,10 @@ const BlogHome = (props) => {
       starring: starring,
       releaseDate: releaseDate,
       description: description,
-      id: blog
-    }} to={`/AllInOne/${blog}`} className='navlink'>
+        id: Id
+      
+      }} to={`/AllInOne/${Id}`} className='navlink'>
+      
     
 
       <div className='articleid'>

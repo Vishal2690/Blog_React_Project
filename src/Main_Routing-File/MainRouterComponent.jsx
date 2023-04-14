@@ -30,7 +30,7 @@ const MainRouterComponent = () => {
                             <Route path='/food' element={<Food />} />
                             <Route path='/allNavBar' element={<AllNavBar />} />
                             <Route path='/card' element={<Card />} />
-                            <Route path='/AllInOne/:artical' element={<AllInOne />} />
+                            <Route path='/AllInOne/:Id' element={<AllInOne />} />
                             <Route path='/*' element={<Page404 />} />
                         </Routes>
                     </BrowserRouter>
