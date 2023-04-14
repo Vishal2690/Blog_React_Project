@@ -1,0 +1,61 @@
+.Main_Blog__Hollywood{
+    width: 96%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.Hollywood_Flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.Hollyweed_Flex img{
+    width: 280px;
+    height: 370px;
+}
+
+.Hollywood_Flex-sub{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Hollywood_Flex-sub img{
+    margin-top: 150px;
+}
+.advrtis{
+    width: 250px;
+    color: white;
+    /* background-color: red; */
+    border: 3px solid wheat;
+    height: 55rem;
+    border-radius: 9px;
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 30rem;
+}
+
+
+
+@media screen and (min-width: 280px) and (max-width: 550px) {
+
+    .Technology_Flex-sub{
+        display: none;
+    }
+    .bigcard__data{
+        margin-left    : 1px;
+        text-align: center;
+    }
+    #toppost{
+        display: none;
+    }
+  
+    .Technology_Flex{
+        margin-top: 14rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

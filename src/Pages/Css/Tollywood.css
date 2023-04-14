@@ -1,0 +1,114 @@
+.Main_text {
+    display        : flex;
+    justify-content: space-between;
+    margin         : 20px 120px 0px auto;
+}
+
+.Main_text h3 {
+    padding-top    : 70px;
+    text-decoration: underline;
+    font-size      : 20px;
+}
+
+.text {
+    font-size  : 27px;
+    margin-left: 100px;
+
+}
+
+
+
+.Main_Blog {
+    margin         : 50px auto 0px auto;
+    width          : 95%;
+    display        : inline-flex;
+    justify-content: space-evenly;
+
+}
+
+.Tollywood_Flex {
+    display       : flex;
+    flex-direction: column;
+
+}
+
+.Tollywood_Flex img {
+    width : 280px;
+    height: 370px;
+
+
+}
+
+.bigcard__data {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    margin-left    : 18rem;
+    margin-top     : 10px;
+}
+
+.igcard__data p{
+    display           : -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow          : hidden;
+    text-overflow     : ellipsis;
+}
+
+.Tollywood_Flex-sub {
+    display       : flex;
+    flex-direction: column;
+
+}
+
+.Tollywood_Flex-sub img {
+    margin-top: 13rem;
+}
+
+.Tollywood_Flex-sub h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 550px) {
+
+    .Tollywood_Flex-sub{
+        display: none;
+    }
+    .bigcard__data{
+        margin-left    : 1px;
+        text-align: center;
+    }
+    #toppost{
+        display: none;
+    }
+  
+  
+    .Tollywood_Flex{
+        width: 13rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media screen and (min-width: 550px) and (max-width: 800px) {
+
+    .Tollywood_Flex-sub{
+        display: none;
+    }
+    .bigcard__data{
+        margin-left    : 1px;
+        text-align: center;
+    }
+    #toppost{
+        display: none;
+    }
+  
+  
+    .Tollywood_Flex{
+        justify-content: center;
+        align-items: center;
+    }
+
+}

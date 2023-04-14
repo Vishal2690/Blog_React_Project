@@ -1,0 +1,15 @@
+.navlink{
+    text-decoration: none;
+    
+
+}
+img{
+    box-shadow: 2px 4px 10px wheat;
+}
+p{
+    color: wheat;
+}
+.home__bigcard__data{
+    line-height: 25px;
+    text-align: center;
+}
