@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import AllNavBar from '../Component/Navbar/AllNavBar'
 import './Css/Technology.css'
-import Card from '../Component/Blog/Card'
 import { store } from '../Component/Context Data/ContextData'
-import CardForSidebar from '../Component/Blog/CardForSidebar'
+import Blog from '../Component/Blog/Blog'
+import BlogSlider from '../Component/Blog/BlogSlider'
 import Footer from '../Component/Footer/Footer'
 
 
@@ -23,7 +23,7 @@ function Technology() {
         <div className='Technology_Flex'>
           {
             core.filter((item) => { return item.category === "Technology" }).map((a) => (
-              <Card
+              <Blog
                 Id={a.id}
                 Name={a.Name}
                 imgUrl={a.img}
@@ -37,7 +37,7 @@ function Technology() {
         <div className='Technology_Flex-sub'>
           {
             core.filter((item) => { return item.category === "Technology" }).map((a) => (
-              <CardForSidebar
+              <BlogSlider
                 Id={a.id}
                 imgUrl={a.img}
                 Name={a.Name}

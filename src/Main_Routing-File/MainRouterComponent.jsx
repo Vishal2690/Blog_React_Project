@@ -10,7 +10,7 @@ import Food from '../Pages/Food';
 import Page404 from '../Component/Error/Page404';
 import ContextData from '../Component/Context Data/ContextData';
 import './Universle.css'
-import Card from '../Component/Blog/Card';
+import Card from '../Component/Blog/Blog';
 import AllInOne from '../Pages/AllInOne';
 
 // dynamic  pata karna hai

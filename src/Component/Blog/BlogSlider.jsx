@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Style/Sidebar.css'
 
-const CardForSidebar = (props) => {
+const BlogSlider = (props) => {
     const { imgUrl, Name, description, blog } = props;
 
     return (
@@ -28,4 +28,4 @@ const CardForSidebar = (props) => {
     )
 }
 
-export default CardForSidebar;
+export default BlogSlider;

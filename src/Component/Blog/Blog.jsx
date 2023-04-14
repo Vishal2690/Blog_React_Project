@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Card = (props) => {
+const Blog = (props) => {
 
   const { Id,imgUrl, Name,  starring, releaseDate,description } = props;
   return (
@@ -33,4 +33,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default Blog;

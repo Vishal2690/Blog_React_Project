@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import './Style/HomeCard.css'
 
-const HomeCard = (props) => {
+const BlogHome = (props) => {
   const { imgUrl, starring, Name, releaseDate, description, blog } = props;
   return (
     <>
@@ -33,4 +33,4 @@ const HomeCard = (props) => {
 
 }
 
-export default HomeCard;
+export default BlogHome;

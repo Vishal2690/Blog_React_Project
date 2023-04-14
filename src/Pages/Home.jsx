@@ -4,7 +4,7 @@ import './Css/Home.css'
 import { useContext } from 'react'
 import { store } from '../Component/Context Data/ContextData'
 import { Link } from 'react-router-dom'
-import HomeCard from '../Component/Blog/HomeCard'
+import BlogHome from '../Component/Blog/BlogHome'
 import Footer from '../Component/Footer/Footer'
 
 function Home() {
@@ -56,7 +56,7 @@ function Home() {
             {
               data.filter((item) => { return item.category === "RenderAsLatest" }).map((a, index) => (
                 <div key={index.id}>
-                <HomeCard
+                <BlogHome
                   Id={a.id}
                   imgUrl={a.img}
                   Name={a.Name}
@@ -74,7 +74,7 @@ function Home() {
           <div className='Home_Flex-two'>
             {
               data.filter((item) => { return item.category === "Action" }).map((a) => (
-                <HomeCard
+                <BlogHome
                   Id={a.id}
                   imgUrl={a.img}
                   Name={a.Name}
@@ -90,7 +90,7 @@ function Home() {
           <div className='Home_Flex-two'>
             {
               data.filter((item) => { return item.category === "ActasTech" }).map((a) => (
-                <HomeCard
+                <BlogHome
                   Id={a.id}
                   imgUrl={a.img}
                   Name={a.Name}
@@ -104,7 +104,7 @@ function Home() {
           <div className='Home_Flex-two'>
             {
               data.filter((item) => { return item.category === "FitnessHome" }).map((a) => (
-                <HomeCard
+                <BlogHome
                   Id={a.id}
                   imgUrl={a.img}
                   Name={a.Name}
@@ -119,7 +119,7 @@ function Home() {
           <div className='Home_Flex__vertical'>
           {
             data.filter((item) => { return item.category === "FoodHome" }).map((a) => (
-              <HomeCard
+              <BlogHome
                 Id={a.id}
                 imgUrl={a.img}
                 Name={a.Name}

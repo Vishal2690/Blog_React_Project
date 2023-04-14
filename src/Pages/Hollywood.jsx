@@ -2,9 +2,9 @@ import React, { useContext } from 'react'
 import AllNavBar from '../Component/Navbar/AllNavBar'
 import './Css/Hollywood.css'
 import { store } from '../Component/Context Data/ContextData'
-import Card from '../Component/Blog/Card'
 import Footer from '../Component/Footer/Footer'
-import CardForSidebar from '../Component/Blog/CardForSidebar'
+import Blog from '../Component/Blog/Blog'
+import BlogSlider from '../Component/Blog/BlogSlider'
 
 
 function Hollywood() {
@@ -19,7 +19,7 @@ function Hollywood() {
       <div className='Main_Blog-second'>
       <div className='Technology_Flex'>
           {detail.filter((item) => { return item.category === "Hollywood" }).map((a) => (
-            <Card
+            <Blog
               Id={a.id}
               imgUrl={a.img}
               Name={a.Name}
@@ -32,7 +32,7 @@ function Hollywood() {
         <div className='Technology_Flex-sub'>
           {
             detail.filter((item) => { return item.category === "Hollywood" }).map((a) => (
-              <CardForSidebar
+              <BlogSlider
                 Id={a.id}
                 imgUrl={a.img}
                 Name={a.Name}
